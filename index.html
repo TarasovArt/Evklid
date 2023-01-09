@@ -5,10 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Евклид - Проектные системы</title>
+
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="libs/accordion.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
@@ -111,6 +118,11 @@
         </p>
         <div class="about-cards flex">
           <div class="about-cards__left card-image flex">
+            <picture>
+              <source srcset="./img/about-img-462.webp" media="(max-width: 490px)">
+              <source srcset="./img/about-img-924.webp" media="(max-width: 1024px)">
+              <img class="card-image__img lazyload" data-src="./img/about-img.webp" alt="Рабочий" role="presentation">
+            </picture>
             <div class="card-image__content-wrap flex">
               <p class="card-image__text">
                 Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов.
@@ -171,10 +183,10 @@
               </button>
             </li>
           </ul>
-          <div class="tabs__content flex">
-            <div class="tabs__left">
-              <div class="tabs__item tabs__item_active" data-target="step-one">
-                <div class="text-card tabs__text-card">
+          <div class="tabs__content">
+            <div class="tabs__item tabs__item_active" data-target="step-one">
+              <div class="text-card tabs__text-card">
+                <div class="text-card__wrap">
                   <h3 class="text-card__title tabs__title">
                     Проводим консультацию
                   </h3>
@@ -182,9 +194,28 @@
                     Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.  
                   </p>
                 </div>
+                <div class="tabs__btn-wrap">
+                  <button class="tabs__btn btn btn-reset">
+                    Подробнее
+                  </button>
+                  <button class="tabs__btn tabs__btn_black btn btn-reset">
+                    Договор
+                  </button>
+                </div>
               </div>
-              <div class="tabs__item" data-target="step-two">
-                <div class="text-card tabs__text-card">
+              <div class="tabs__backgroung">
+                <picture class="flex">
+                  <source srcset="./img/work-img-1-460.webp" media="(max-width: 490px)">
+                  <source srcset="./img/work-img-1-900.webp" media="(max-width: 992px)">
+                  <source srcset="./img/work-img-1-1200.webp" media="(max-width: 1440px)">
+                  <source srcset="./img/work-img-1-900.webp" media="(max-width: 1900px)">
+                  <img class="tabs__img lazyload" data-src="./img/work-img-1-900.webp" alt="Ноутбук" role="presentation">
+                </picture>
+              </div>
+            </div>
+            <div class="tabs__item" data-target="step-two">
+              <div class="text-card tabs__text-card">
+                <div class="text-card__wrap">
                   <h3 class="text-card__title tabs__title">
                     Составляем смету
                   </h3>
@@ -192,9 +223,28 @@
                     Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.  
                   </p>
                 </div>
+                <div class="tabs__btn-wrap">
+                  <button class="tabs__btn btn btn-reset">
+                    Подробнее
+                  </button>
+                  <button class="tabs__btn tabs__btn_black btn btn-reset">
+                    Договор
+                  </button>
+                </div>
               </div>
-              <div class="tabs__item" data-target="step-three">
-                <div class="text-card tabs__text-card">
+              <div class="tabs__backgroung">
+                <picture class="flex">
+                  <source srcset="./img/work-img-2-460.webp" media="(max-width: 490px)">
+                  <source srcset="./img/work-img-2-900.webp" media="(max-width: 992px)">
+                  <source srcset="./img/work-img-2-1200.webp" media="(max-width: 1440px)">
+                  <source srcset="./img/work-img-2-900.webp" media="(max-width: 1900px)">
+                  <img class="tabs__img" data-src="./img/work-img-2-900.webp" alt="Бумага с ручкой" role="presentation">
+                </picture>
+              </div>
+            </div>
+            <div class="tabs__item" data-target="step-three">
+              <div class="text-card tabs__text-card">
+                <div class="text-card__wrap">
                   <h3 class="text-card__title tabs__title">
                     Привлекаем подрядчиков
                   </h3>
@@ -202,9 +252,28 @@
                     Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.  
                   </p>
                 </div>
+                <div class="tabs__btn-wrap">
+                  <button class="tabs__btn btn btn-reset">
+                    Подробнее
+                  </button>
+                  <button class="tabs__btn tabs__btn_black btn btn-reset">
+                    Договор
+                  </button>
+                </div>
               </div>
-              <div class="tabs__item" data-target="step-four">
-                <div class="text-card tabs__text-card">
+              <div class="tabs__backgroung">
+                <picture class="flex">
+                  <source srcset="./img/work-img-3-460.webp" media="(max-width: 490px)">
+                  <source srcset="./img/work-img-3-900.webp" media="(max-width: 992px)">
+                  <source srcset="./img/work-img-3-1200.webp" media="(max-width: 1440px)">
+                  <source srcset="./img/work-img-3-900.webp" media="(max-width: 1900px)">
+                  <img class="tabs__img lazyload" data-src="./img/work-img-3-900.webp" alt="Ноутбук" role="presentation">
+                </picture>
+              </div>
+            </div>
+            <div class="tabs__item" data-target="step-four">
+              <div class="text-card tabs__text-card">
+                <div class="text-card__wrap">
                   <h3 class="text-card__title tabs__title">
                     Инспектируем все этапы работ
                   </h3>
@@ -212,17 +281,24 @@
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.  
                   </p>
                 </div>
+                <div class="tabs__btn-wrap">
+                  <button class="tabs__btn btn btn-reset">
+                    Подробнее
+                  </button>
+                  <button class="tabs__btn tabs__btn_black btn btn-reset">
+                    Договор
+                  </button>
+                </div>
               </div>
-              <div class="tabs__btn-wrap">
-                <button class="tabs__btn btn btn-reset">
-                  Подробнее
-                </button>
-                <button class="tabs__btn tabs__btn_black btn btn-reset">
-                  Договор
-                </button>
+              <div class="tabs__backgroung">
+                <picture class="flex">
+                  <source srcset="./img/work-img-4-460.webp" media="(max-width: 490px)">
+                  <source srcset="./img/work-img-4-900.webp" media="(max-width: 992px)">
+                  <source srcset="./img/work-img-4-1200.webp" media="(max-width: 1440px)">
+                  <source srcset="./img/work-img-4-900.webp" media="(max-width: 1900px)">
+                  <img class="tabs__img lazyload" data-src="./img/work-img-4-900.webp" alt="Ежедневник" role="presentation">
+                </picture>
               </div>
-            </div>
-            <div class="tabs__backgroung tabs__item-bg1">
             </div>
           </div>
         </div>
@@ -433,6 +509,7 @@
   </footer>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="libs/accordion.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="libs/lazyload.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
